@@ -1,2 +1,2 @@
-# apprentissage-git
+# prochaine etape
 commitation
