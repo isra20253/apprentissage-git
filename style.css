@@ -1,5 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* style.css */
+
+body {
+    /* Ajoute de l'espace en haut pour que le contenu ne soit pas caché par la navbar fixe */
+    padding-top: 70px; 
+}
+
+/* Style général pour toutes les sections */
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* Bordure subtile pour séparer visuellement les sections */
+    border-bottom: 1px solid #e9ecef; 
+}
+
+/* Classe pour un fond gris léger (alternative à bg-light de Bootstrap) */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Amélioration des légendes du carrousel pour la lisibilité */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+    border-radius: 10px;
+    padding: 20px;
+    bottom: 40px; /* Un peu plus haut que la valeur par défaut */
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/*
+  AMÉLIORATION : Style des cartes avec box-shadow et transition
+*/
+.card {
+    border: none; /* On retire la bordure par défaut de la carte */
+    border-radius: 15px; /* Bords plus arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre portée subtile */
+    
+    /* La transition rend l'effet de survol fluide et agréable */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Effet au survol de la souris sur les cartes */
+.card:hover {
+    transform: translateY(-10px); /* Soulève légèrement la carte */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+}
+
+/* Style pour les icônes dans la section services */
+.card .display-4 {
+    font-size: 3.5rem; /* Agrandit les icônes */
+}
+
+/* Style pour les en-têtes de section */
+.section-header h2 {
+    font-weight: 700;
+}
+.section-header p {
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto; /* Centre le paragraphe */
 }
